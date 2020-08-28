@@ -109,6 +109,37 @@ handled by running the following lines of code in the R console.
 Answer `y` to any questions asked in the terminal. However, if the
 question is asking you to install packages from source, answer “no.”
 
+Below is a list of all the required packages and their versions as of
+Friday, August 28 2020. Note that even if you already have a package
+installed, you should update it if you have an older version than what
+is shown below.
+
+| Package         | Version |
+|:----------------|:--------|
+| DT              | 0.15    |
+| dygraphs        | 1.1.1.6 |
+| flexdashboard   | 0.5.2   |
+| ggiraph         | 0.7.8   |
+| glue            | 1.4.2   |
+| here            | 0.1     |
+| highcharter     | 0.8.2   |
+| htmltools       | 0.5.0   |
+| httr            | 1.4.2   |
+| jsonlite        | 1.7.0   |
+| leaflet         | 2.0.3   |
+| plotly          | 4.9.2.1 |
+| sass            | 0.2.0   |
+| shiny           | 1.5.0   |
+| shinyalert      | 1.1     |
+| shinycssloaders | 1.0.0   |
+| shinydashboard  | 0.7.1   |
+| shinyjs         | 1.1     |
+| shinyloadtest   | 1.0.1   |
+| shinytest       | 1.4.0   |
+| shinythemes     | 1.1.2   |
+| tidyverse       | 1.3.0   |
+| timevis         | 0.5     |
+
 All Done
 ========
 

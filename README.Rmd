@@ -138,6 +138,14 @@ source('prep/install_packages.r')
 
 Answer `y` to any questions asked in the terminal. However, if the question is asking you to install packages from source, answer "no."
 
+Below is a list of all the required packages and their versions as of `r format(Sys.Date(), "%A, %B %d %Y")`. Note that even if you already have a package installed, you should update it if you have an older version than what is shown below.
+
+```{r package-info, echo=FALSE}
+packages <- as.data.frame(installed.packages()[packages, ], row.names = FALSE)
+packages <- packages[, c("Package", "Version")]
+knitr::kable(packages)
+```
+
 # All Done
 
 That's everything. You should now do all of your work for this class in this project.
