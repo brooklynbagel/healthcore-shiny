@@ -1,31 +1,27 @@
 pkgs <- c(
-  # basics
-  "shiny",
-  "tidyverse",
-  "here",
+  "DT",
+  "dygraphs",
+  "flexdashboard",
+  "ggiraph",
   "glue",
-  "httr",
+  "here",
+  "highcharter",
   "htmltools",
-  "shinyjs",
+  "httr",
+  "jsonlite",
+  "leaflet",
+  "plotly",
+  "sass",
+  "shiny",
   "shinyalert",
   "shinycssloaders",
-  # basic styling
-  "shinythemes",
   "shinydashboard",
-  "flexdashboard",
-  # htmlwidgets
-  "DT",
-  "plotly",
-  "highcharter",
-  "leaflet",
-  "dygraphs",
-  "ggiraph",
-  "timevis",
-  # other
-  "sass",
+  "shinyjs",
   "shinytest",
   "shinyloadtest",
-  "jsonlite"
+  "shinythemes",
+  "tidyverse",
+  "timevis"
 )
 
 install.packages(pkgs, repos = "https://cloud.r-project.org/")

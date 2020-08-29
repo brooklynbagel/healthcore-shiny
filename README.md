@@ -110,7 +110,7 @@ Answer `y` to any questions asked in the terminal. However, if the
 question is asking you to install packages from source, answer “no.”
 
 Below is a list of all the required packages and their versions as of
-Friday, August 28 2020. Note that even if you already have a package
+Saturday, August 29 2020. Note that even if you already have a package
 installed, you should update it if you have an older version than what
 is shown below.
 
