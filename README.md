@@ -142,6 +142,15 @@ is shown below.
 | tidyverse       | 1.3.0   |
 | timevis         | 0.5     |
 
+Useful References
+=================
+
+During the course of the workshop, you may find it helpful to refer to
+the [Shiny
+documentation](https://shiny.rstudio.com/reference/shiny/1.5.0/) and
+[Shiny
+cheatsheat](https://raw.githubusercontent.com/rstudio/cheatsheets/master/shiny.pdf).
+
 All Done
 ========
 
