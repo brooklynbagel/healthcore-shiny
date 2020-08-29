@@ -128,6 +128,8 @@ is shown below.
 | jsonlite        | 1.7.0   |
 | leaflet         | 2.0.3   |
 | plotly          | 4.9.2.1 |
+| rmarkdown       | 2.3     |
+| rsconnect       | 0.8.16  |
 | sass            | 0.2.0   |
 | shiny           | 1.5.0   |
 | shinyalert      | 1.1     |
