@@ -110,9 +110,9 @@ Answer `y` to any questions asked in the terminal. However, if the
 question is asking you to install packages from source, answer “no.”
 
 Below is a list of all the required packages and their versions as of
-Saturday, August 29 2020. Note that even if you already have a package
-installed, you should update it if you have an older version than what
-is shown below.
+Thursday, September 03 2020. Note that even if you already have a
+package installed, you should update it if you have an older version
+than what is shown below.
 
 | Package         | Version |
 |:----------------|:--------|
@@ -128,6 +128,7 @@ is shown below.
 | jsonlite        | 1.7.0   |
 | leaflet         | 2.0.3   |
 | plotly          | 4.9.2.1 |
+| prettydoc       | 0.4.0   |
 | rmarkdown       | 2.3     |
 | rsconnect       | 0.8.16  |
 | sass            | 0.2.0   |

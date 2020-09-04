@@ -11,6 +11,7 @@ pkgs <- c(
   "jsonlite",
   "leaflet",
   "plotly",
+  "prettydoc",
   "rmarkdown",
   "rsconnect",
   "sass",
