@@ -5,7 +5,7 @@ params:
     repoName: "healthcore-shiny"
     repoOwner: "brooklynbagel"
     organizer: "HealthCore Inc"
-    packages: !r c("DT", "dygraphs", "flexdashboard", "ggiraph", "glue", "here", "highcharter", "htmltools", "httr", "jsonlite", "leaflet", "plotly", "prettydoc", "rmarkdown", "rsconnect", "sass", "shiny", "shinyalert", "shinycssloaders", "shinydashboard", "shinyjs", "shinytest", "shinyloadtest", "shinythemes", "tidyverse", "timevis")
+    packages: !r c("DT", "dygraphs", "flexdashboard", "glue", "here", "highcharter", "htmltools", "httr", "jsonlite", "leaflet", "plotly", "prettydoc", "rmarkdown", "rsconnect", "sass", "shiny", "shinyalert", "shinycssloaders", "shinydashboard", "shinyjs", "shinytest", "shinyloadtest", "shinythemes", "tidyverse", "timevis")
     r_version: 4.0.2
 ---
 

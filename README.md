@@ -110,7 +110,7 @@ Answer `y` to any questions asked in the terminal. However, if the
 question is asking you to install packages from source, answer “no.”
 
 Below is a list of all the required packages and their versions as of
-Thursday, September 03 2020. Note that even if you already have a
+Wednesday, September 09 2020. Note that even if you already have a
 package installed, you should update it if you have an older version
 than what is shown below.
 
@@ -119,7 +119,6 @@ than what is shown below.
 | DT              | 0.15    |
 | dygraphs        | 1.1.1.6 |
 | flexdashboard   | 0.5.2   |
-| ggiraph         | 0.7.8   |
 | glue            | 1.4.2   |
 | here            | 0.1     |
 | highcharter     | 0.8.2   |

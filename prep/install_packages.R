@@ -2,7 +2,6 @@ pkgs <- c(
   "DT",
   "dygraphs",
   "flexdashboard",
-  "ggiraph",
   "glue",
   "here",
   "highcharter",
