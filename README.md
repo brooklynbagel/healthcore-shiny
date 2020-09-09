@@ -142,6 +142,16 @@ than what is shown below.
 | tidyverse       | 1.3.0   |
 | timevis         | 0.5     |
 
+Downloading the Data
+====================
+
+    if (!dir.exists(here::here("data"))) dir.create(here::here("data"))
+
+    download.file(
+      url = "https://raw.githubusercontent.com/brooklynbagel/healthcore-shiny/master/data/spotify_songs.csv",
+      destfile = here::here("data", "spotify_songs.csv")
+    )
+
 Useful References
 =================
 

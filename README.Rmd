@@ -146,6 +146,18 @@ packages <- packages[, c("Package", "Version")]
 knitr::kable(packages)
 ```
 
+# Downloading the Data
+
+```{r download-data, eval=FALSE}
+if (!dir.exists(here::here("data"))) dir.create(here::here("data"))
+
+download.file(
+  url = "https://raw.githubusercontent.com/brooklynbagel/healthcore-shiny/master/data/spotify_songs.csv",
+  destfile = here::here("data", "spotify_songs.csv")
+)
+```
+
+
 # Useful References
 
 During the course of the workshop, you may find it helpful to refer to the [Shiny documentation](https://shiny.rstudio.com/reference/shiny/1.5.0/) and [Shiny cheatsheat](https://raw.githubusercontent.com/rstudio/cheatsheets/master/shiny.pdf).
