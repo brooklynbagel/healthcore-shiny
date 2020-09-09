@@ -5,4 +5,6 @@
 scratch/*
 !scratch/scratch.md
 
+checklist.md
+
 .DS_Store

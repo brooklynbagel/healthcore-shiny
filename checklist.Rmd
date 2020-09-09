@@ -1,0 +1,32 @@
+---
+title: "Checklist"
+output: github_document
+params:
+  packages: !r c("DT", "dygraphs", "flexdashboard", "glue", "here", "highcharter", "htmltools", "httr", "jsonlite", "leaflet", "plotly", "prettydoc", "rmarkdown", "rsconnect", "sass", "shiny", "shinyalert", "shinycssloaders", "shinydashboard", "shinyjs", "shinytest", "shinyloadtest", "shinythemes", "tidyverse", "timevis")
+  r_version: 4.0.2
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE)
+
+```
+
+```{r, results='asis'}
+# check R version
+if (getRversion() < params$r_version) {
+  msg_r_ver <- paste("- [ ] Recent version of R is installed. Need ", params$r_version)
+} else {
+  msg_r_ver <- "- [X] Recent version of R is installed."
+}
+
+# check installed packages
+missing_pkgs <- setdiff(params$packages, installed.packages())
+if (length(missing_pkgs) > 0) {
+  msg_pkgs <- paste(missing_pkgs, collapse = ", ")
+  msg_pkgs <- paste("- [ ] All required packaged installed. Need", msg_pkgs)
+} else {
+  msg_pkgs <- "- [X] All required packaged installed"
+}
+
+writeLines(c(msg_r_ver, msg_pkgs))
+```
