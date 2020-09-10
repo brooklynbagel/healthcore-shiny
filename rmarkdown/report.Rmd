@@ -1,0 +1,55 @@
+---
+title: "Spotify Song Report"
+date: "`r Sys.Date()`"
+output:
+  prettydoc::html_pretty:
+    theme: architect
+    highlight: github
+params:
+  file: ""
+  var_x: ""
+  var_y: ""
+  alpha: 0.2
+  color_by_genre: FALSE
+  num_rows: 20
+---
+
+```{r setup, echo=FALSE}
+knitr::opts_chunk$set(echo = FALSE)
+
+library(dplyr)
+library(DT)
+library(ggplot2)
+library(stringr)
+
+songs <- readr::read_rds(params$file)
+```
+
+# A Plot
+
+```{r plot}
+p <- ggplot(songs_filtered(), aes_string(x = params$var_x, y = params$var_y)) +
+  theme_minimal()
+
+if (params$color_by_genre) {
+  p + geom_point(alpha = params$alpha, aes(color = playlist_genre))
+} else {
+  p + geom_point(alpha = params$alpha)
+}
+```
+
+# A Table
+
+```{r table}
+colnames <- songs %>% 
+  select(-ends_with("_id")) %>% 
+  colnames() %>% 
+  str_replace_all("_", " ") %>%
+  str_to_title()
+
+songs %>%
+  slice_head(n = params$num_rows) %>%
+  select(-ends_with("_id")) %>% 
+  datatable(colnames = colnames, rownames = FALSE, options = list(dom = "tip"),
+            extensions = c("Responsive"))
+```
